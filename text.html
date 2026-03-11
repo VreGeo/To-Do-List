@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Todo List</title>
+
+  <!-- Google Font: Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
+  <!-- Your CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <h1>My Todo List</h1>
+    <p>This site is designed for you to note your tasks and check in each of them</p>
+  </header>
+
+  <main>
+    <section aria-labelledby="add-task-title">
+      <h2 id="add-task-title">Add Task</h2>
+
+      <form id="todoForm">
+        <label for="taskInput">New Task:</label>
+        <input
+          type="text"
+          id="taskInput"
+          name="task"
+          placeholder="Enter a task"
+          required
+        />
+      <button type="button" class="btn-add" id="add_btn">Add</button>
+      </form>
+    </section>
+
+    <section aria-labelledby="tasks-title">
+      <h2 id="tasks-title">Tasks</h2>
+
+      <ul id="todoList">
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Todo App Practice</p>
+  </footer>
+  <script src="action.js"></script>  
+</body>
+</html>
